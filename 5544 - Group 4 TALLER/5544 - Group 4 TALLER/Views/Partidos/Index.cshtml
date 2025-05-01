@@ -49,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.Equipo.Nombre)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.PartidoID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PartidoID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PartidoID">Delete</a>
+                <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.PartidoID">Edit</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.PartidoID">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.PartidoID">Delete</a>
             </td>
         </tr>
 }
