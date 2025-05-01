@@ -1,4 +1,8 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<DbGrupo4>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DbGrupo4") ?? throw new InvalidOperationException("Connection string 'DbGrupo4' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
