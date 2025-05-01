@@ -18,6 +18,8 @@ namespace _5544___Group_4_TALLER.Controllers
             _context = context;
         }
 
+
+
         // GET: Jugadores
         public async Task<IActionResult> Index()
         {
